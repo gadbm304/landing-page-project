@@ -1,0 +1,78 @@
+/* color variables */
+:root {
+    --light-grey:#b2b8bd;
+    --dark-red:#8B351C;
+    --light-red:#F24822;
+    --white:#F6F6F6;
+    --black:#0D0D0D;
+
+}
+body {
+    font-family: 'Joan', serif;
+    font-size: 120%;
+    color: var(--light-grey);
+    background-image: url(coffee-171653_1920.jpg);
+    margin: 0;
+    font-weight: 400;
+}
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+header, main, footer {
+    margin: 0;
+    float: right;
+    width: 45%;
+}
+
+/* buttons */
+a.button {
+    display: inline-block;
+    width: auto;
+    padding: 0.5em 1em;
+    background-color: var(--light-red);
+    border-radius: 1em;
+    color: var(--light-grey);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a.button.primary {
+    background-color: var(--light-red);
+}
+
+/* navbar styling */
+#hero nav {
+    display: flex;
+    justify-content: space-between;
+}
+#hero nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+#hero nav a {
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav a {
+    color: var(--light-red);
+}
+
+/* Style the hero unit */
+#hero {
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+    grid-template-areas: 
+    "                 "
+    ;
+}
+
+/* other styles */
+footer {
+    color: var(--white);
+    padding: 1em;
+    background-color: var(--dark-red);
+}
