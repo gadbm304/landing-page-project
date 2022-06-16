@@ -11,9 +11,9 @@ body {
     font-family: 'Joan', serif;
     font-size: 120%;
     color: var(--light-grey);
-    background-image: url(coffee-171653_1920.jpg);
     margin: 0;
     font-weight: 400;
+    background-color: var(--dark-red);
 }
 h1, h2, h3, h4 {
     font-weight: 600;
@@ -56,7 +56,8 @@ a.button.primary {
 }
 
 nav a {
-    color: var(--light-red);
+    color: var(--white);
+    background-color: var(--dark-red);
 }
 
 /* Style the hero unit */
@@ -65,15 +66,22 @@ nav a {
 }
 #sign-up-discount {
     grid-area: discnt;
+    display: flex;
+    justify-content: center;
 }
 #tagline {
     grid-area: tag;
 }
-#product {
+#products {
     grid-area: prod;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(240, 1fr));
+
 }
 #hero {
     display: grid;
+    background-image: url(coffee-171653_1920.jpg);
+    background-repeat: no-repeat;
     grid-template-columns: 1fr 1fr 2fr 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
